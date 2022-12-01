@@ -1,0 +1,46 @@
+##################### P·O·S·T ######################
+POST  http://localhost:9000/api/ordenServicios/ HTTP/1.1
+content-Type: application/json
+
+{
+    "fecha":"fecha1",
+    "hora":"hora1",
+    "largo":1,
+    "ancho":1,
+    "alto":1,
+    "peso":1,
+    "dirRecoleccion":"direccion recogida",
+    "ciudadRecoleccion":"ciudad recogida",
+    "destinatario":"destinatario",
+    "idDestinatario":"id destinatario",
+    "dirEntrega":"dir entrega",
+    "ciudadEntrega":"ciudad entraga"
+}
+
+##################### G·E·T = TODOS ######################
+GET http://localhost:9000/api/ordenServicios/ HTTP/1.1
+
+##################### G·E·T = ID ######################
+GET http://localhost:9000/api/ordenServicios/6387c6cc21fba8fe14b8cd02 HTTP/1.1
+
+##################### P·U·T ######################
+PUT http://localhost:9000/api/ordenServicios/6387c6cc21fba8fe14b8cd02 HTTP/1.1
+content-Type: application/json
+
+{
+   "fecha":"fecha3",
+    "hora":"hora3",
+    "largo":3,
+    "ancho":3,
+    "alto":3,
+    "peso":3,
+    "dirRecoleccion":"direccion recogida3",
+    "ciudadRecoleccion":"ciudad recogida3",
+    "destinatario":"destinatario3",
+    "idDestinatario":"id destinatario3",
+    "dirEntrega":"dir entrega3",
+    "ciudadEntrega":"ciudad entraga3"
+}
+
+##################### D·E·L·E·T·E ######################
+DELETE http://localhost:9000/api/ordenServicios/6387c6cc21fba8fe14b8cd02 HTTP/1.1
