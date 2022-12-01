@@ -1,8 +1,8 @@
 const mongoose=require('mongoose');
 
 const ordenServicioSchema=mongoose.Schema({
-    fecha:{type:String,required:true},//OJO cambiar a formato fecha
-    hora:{type:String,required:true},//OJO cambiar a formato hora
+    fecha:{type:String,required:true},
+    hora:{type:String,required:true},
     largo:{type:Number,required:true},
     ancho:{type:Number,required:true},
     alto:{type:Number,required:true},
